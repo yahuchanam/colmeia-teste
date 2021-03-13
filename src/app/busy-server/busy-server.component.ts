@@ -27,7 +27,7 @@ export class BusyServerComponent implements OnInit {
       this.recursivePromisse(total)
         .then((resultado: number) => {
           this.prompt += "Finally\n";
-          this.prompt += "Sum: ${resultado}\n";
+          this.prompt += `Sum: ${resultado}\n`;
           this.concluido = true;
         });
     } catch (err) {
