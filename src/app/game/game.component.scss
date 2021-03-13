@@ -1,0 +1,38 @@
+app-tabuleiro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transform-origin: top center;
+
+  @for $i from 4 through 50 {
+    &.tamanho-#{$i} {
+      transform: scale(calc(8 / #{$i}));
+      width: calc(4rem * #{$i});
+    }
+  }
+}
+
+.painel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 30px;
+  margin: 25px auto 0;
+  justify-content: center;
+}
+
+.tabuleiro-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.acoes {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.controles {
+  width: 100%;  
+}

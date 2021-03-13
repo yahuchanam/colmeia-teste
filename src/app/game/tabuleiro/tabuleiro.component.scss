@@ -1,0 +1,15 @@
+.tabuleiro {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: calc(4rem * 8);
+  flex-wrap: wrap;
+  background-color: #fff;
+
+  @for $i from 4 through 50 {
+    &-#{$i} {
+        width: calc(4rem * #{$i});
+    }
+  }
+}
+

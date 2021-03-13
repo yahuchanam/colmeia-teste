@@ -1,0 +1,20 @@
+<app-controles class="controles"></app-controles>
+<app-acoes
+  class="acoes"
+  (limpar)="limpar()"
+  (resolver)="resolver()"
+  (resolverExercicio)="resolverExercicio()"
+>
+</app-acoes>
+<div class="painel">
+  <h2 *ngIf="!!resultado">Resultado: {{ resultado }}</h2>
+  <h2>Tentativas: {{ tentativas }}</h2>
+</div>
+<div class="tabuleiro-wrapper">
+  <app-tabuleiro
+    #tabuleiro
+    [casas]="tabuleiro.casas"
+    [pecas]="tabuleiro.pecas"
+    [class]="'tamanho-' + tamanho"
+  ></app-tabuleiro>
+</div>

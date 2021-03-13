@@ -1,0 +1,29 @@
+.casa {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #666;
+  font-size: 4rem;
+}
+
+.cor-clara {
+  background-color: #ccc;
+}
+
+.sob-ataque {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  background-color: #f00;
+  opacity: 0.5;
+}
+
+.peca {
+    z-index: 1;
+}

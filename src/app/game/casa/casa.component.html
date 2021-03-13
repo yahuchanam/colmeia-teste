@@ -1,0 +1,9 @@
+<div class="casa"
+     [ngClass]="{ 'cor-clara': (info.coordenada.x + info.coordenada.y) % 2 === 0 }"
+    >
+  <div class="sob-ataque" *ngIf="info.sobAtaque"></div>
+  <div class="peca" 
+       *ngIf="info.peca !== undefined">
+    &#9813;
+  </div>
+</div>

@@ -1,0 +1,9 @@
+code {
+  display: flex;
+  width: fill-available;
+  height: calc(100vh - 36px - 2rem);
+  padding: 1rem;
+  background: #180031;
+  color: #31e060;
+  overflow: scroll;
+}

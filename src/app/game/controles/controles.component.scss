@@ -1,0 +1,14 @@
+form {
+  width: 100%;
+  padding: 25px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.tamanho {
+    display: flex;
+    flex-direction: column;
+}

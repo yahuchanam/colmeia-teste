@@ -1,0 +1,5 @@
+<div [class]="'tabuleiro tabuleiro-'+ tamanho">
+  <app-casa *ngFor="let c of casas" 
+            [info]="c"
+  ></app-casa>
+</div>

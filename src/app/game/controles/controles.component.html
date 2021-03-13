@@ -1,0 +1,17 @@
+<form [formGroup]="formGroup">
+  <mat-slide-toggle formControlName="pausa" color="primary">
+    Exibir pausa entre jogadas?
+  </mat-slide-toggle>
+
+  <div class="tamanho">
+    <span>Tabuleiro com {{ formGroup.get("tamanho").value }} peças</span>
+    <mat-slider
+      thumbLabel
+      formControlName="tamanho"
+      color="primary"
+      tickInterval="1"
+      min="4"
+      max="30"
+    ></mat-slider>
+  </div>
+</form>

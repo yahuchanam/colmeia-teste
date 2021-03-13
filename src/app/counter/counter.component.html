@@ -1,0 +1,24 @@
+<form>
+  <mat-form-field appearance="fill">
+    <mat-label>Livro</mat-label>
+    <textarea matInput [formControl]="book"></textarea>
+  </mat-form-field>
+</form>
+<section>
+  <div>
+    <h2>Palavras</h2>
+    <mat-nav-list>
+      <mat-list-item *ngFor="let p of palavras">
+        {{ p }}
+      </mat-list-item>
+    </mat-nav-list>
+  </div>
+  <div>
+    <h2>Letras</h2>
+    <mat-nav-list>
+      <mat-list-item *ngFor="let l of letras">
+        {{ l }}
+      </mat-list-item>
+    </mat-nav-list>
+  </div>
+</section>
