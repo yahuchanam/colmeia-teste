@@ -5,10 +5,10 @@ app-tabuleiro {
   margin: 0 auto;
   transform-origin: top center;
 
-  @for $i from 4 through 50 {
+  @for $i from 4 through 30 {
     &.tamanho-#{$i} {
       transform: scale(calc(8 / #{$i}));
-      width: calc(4rem * #{$i});
+      width: calc(2.5rem * #{$i});
     }
   }
 }
@@ -16,23 +16,48 @@ app-tabuleiro {
 .painel {
   display: flex;
   flex-wrap: wrap;
-  gap: 0 30px;
-  margin: 25px auto 0;
+  gap: 0 1.875rem;
+  margin: 1.5625rem auto 0;
   justify-content: center;
 }
 
 .tabuleiro-wrapper {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .acoes {
   display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 25px;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  max-width: 20rem;
+  margin: 0.5rem auto 0;
 }
 
 .controles {
-  width: 100%;  
+  width: 100%;
+}
+
+@media (min-width: 48rem) {
+  :host {
+    display: flex;
+    flex-wrap: wrap;
+
+    .controles {
+      width: 50%;
+    }
+
+    .acoes {
+      align-items: center;
+    }
+
+    .painel, .tabuleiro-wrapper {
+      flex: 1 1 100%;
+    }
+
+    .tabuleiro-wrapper {
+      max-width: 100%;
+    }
+  }
 }

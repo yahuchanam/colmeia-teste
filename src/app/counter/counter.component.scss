@@ -1,23 +1,33 @@
 mat-form-field {
-    width: -webkit-fill-available;
-    margin: 2rem;
+  position: relative;
+  width: 100%;
 }
 
 textarea {
-    height: 15rem;
+  height: 15rem;
 }
 
 section {
-    display: flex;
-    gap: 4rem;
-    justify-content: space-evenly;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 div {
-    display: flex;
-    flex-direction: column;
-    width: 32%;
-    background: #EEE;
-    padding: 1rem 1.5rem;
-    margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #eee;
+  padding: 1rem 1.5rem;
+}
+
+.mat-nav-list .mat-list-item {
+  height: 1.5rem;
+}
+
+@media (min-width: 45rem) {
+  div {
+    width: 49%;
+  }
 }

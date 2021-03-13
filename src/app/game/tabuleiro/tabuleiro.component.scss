@@ -1,15 +1,16 @@
+$tamanho: 2.5rem;
+
 .tabuleiro {
   display: flex;
   position: relative;
   flex-direction: row;
-  width: calc(4rem * 8);
+  width: calc(#{$tamanho} * 8);
   flex-wrap: wrap;
   background-color: #fff;
 
-  @for $i from 4 through 50 {
+  @for $i from 4 through 30 {
     &-#{$i} {
-        width: calc(4rem * #{$i});
+      width: calc(#{$tamanho} * #{$i});
     }
   }
 }
-

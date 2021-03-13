@@ -7,7 +7,6 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class AcoesComponent implements OnInit {
 
-  @Output() limpar = new EventEmitter<void>();
   @Output() resolverExercicio = new EventEmitter<void>();
   @Output() resolver = new EventEmitter<void>();
 

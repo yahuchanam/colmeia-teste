@@ -1,13 +1,15 @@
+$tamanho: 2.5rem;
+
 .casa {
-  width: 4rem;
-  height: 4rem;
+  width: $tamanho;
+  height: $tamanho;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   background-color: #666;
-  font-size: 4rem;
+  font-size: $tamanho;
 }
 
 .cor-clara {
@@ -18,8 +20,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 4rem;
-  height: 4rem;
+  width: $tamanho;
+  height: $tamanho;
   background-color: #f00;
   opacity: 0.5;
 }
